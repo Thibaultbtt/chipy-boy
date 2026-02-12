@@ -2,17 +2,56 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Surprise 🎉</title>
+    <title>Surprise</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="container">
-        <h1>Surprise !</h1>
-        <button onclick="reveler()">Clique ici</button>
-        <p id="message" class="hidden">Tu es incroyable 💛</p>
+<!-- SCREEN 1 -->
+<div id="screen1" class="screen active">
+    <h1>Surprise</h1>
+    <button id="startBtn">Clique ici</button>
+</div>
+
+<!-- SCREEN 2 -->
+<div id="screen2" class="screen">
+
+    <div class="carousel">
+        <img src="photo1.jpg" class="active">
+        <img src="photo2.jpg">
+        <img src="photo3.jpg">
     </div>
 
-    <script src="script.js"></script>
+    <div class="message">
+        <p>
+            Depuis quelque temps, quelque chose évolue entre nous.
+            Chaque moment partagé compte un peu plus.
+        </p>
+        <p>
+            J’ai envie de voir jusqu’où cette belle énergie peut nous mener.
+        </p>
+    </div>
+
+    <h3 class="question">
+        Veux-tu essayer de construire quelque chose avec moi et passer ce week-end
+        de Saint-Valentin ensemble pour marquer ce tournant dans notre relation ?
+    </h3>
+
+    <div class="button-zone">
+        <button id="ouiBtn">Oui</button>
+        <button id="nonBtn">Non</button>
+    </div>
+
+</div>
+
+<!-- SCREEN 3 -->
+<div id="screen3" class="screen">
+    <div class="big">Je t’aime Chipy Sylvain</div>
+    <p>Merci de me faire confiance</p>
+    <p><strong>Ton Boy</strong></p>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>

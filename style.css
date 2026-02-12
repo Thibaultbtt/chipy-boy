@@ -1,25 +1,88 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    text-align: center;
+    overflow-x: hidden;
 }
 
-.container {
-    text-align: center;
+/* Screens */
+.screen {
+    display: none;
+    padding: 40px 20px;
+}
+
+.active {
+    display: block;
+}
+
+/* Screen 1 */
+#screen1 {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Carousel */
+.carousel {
+    width: 300px;
+    margin: 0 auto 30px auto;
+    position: relative;
+}
+
+.carousel img {
+    width: 100%;
+    border-radius: 12px;
+    display: none;
+}
+
+.carousel img.active {
+    display: block;
+}
+
+/* Message */
+.message {
+    max-width: 600px;
+    margin: 20px auto;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.question {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+/* Buttons */
+.button-zone {
+    position: relative;
+    height: 200px;
+    margin-top: 20px;
 }
 
 button {
-    padding: 10px 20px;
+    padding: 12px 25px;
     font-size: 16px;
+    border-radius: 8px;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
+    margin: 10px;
 }
 
-.hidden {
-    display: none;
+#nonBtn {
+    position: absolute;
+}
+
+/* Final Screen */
+#screen3 {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.big {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
 }
