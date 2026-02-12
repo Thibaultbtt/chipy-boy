@@ -2,56 +2,62 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Surprise</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <title>Surprise ❤️</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-<!-- SCREEN 1 -->
-<div id="screen1" class="screen active">
-    <h1>Surprise</h1>
-    <button id="startBtn">Clique ici</button>
-</div>
-
-<!-- SCREEN 2 -->
-<div id="screen2" class="screen">
-
-    <div class="carousel">
-        <img src="photo1.jpg" class="active">
-        <img src="photo2.jpg">
-        <img src="photo3.jpg">
+    <!-- Page 1: Bouton Surprise -->
+    <div id="page1" class="page active">
+        <div class="surprise-container">
+            <h1 class="surprise-title">J'ai quelque chose pour toi...</h1>
+            <button id="surpriseBtn" class="surprise-btn">Clique ici 💝</button>
+        </div>
     </div>
 
-    <div class="message">
-        <p>
-            Depuis quelque temps, quelque chose évolue entre nous.
-            Chaque moment partagé compte un peu plus.
-        </p>
-        <p>
-            J’ai envie de voir jusqu’où cette belle énergie peut nous mener.
-        </p>
+    <!-- Page 2: Question avec carousel -->
+    <div id="page2" class="page">
+        <div class="carousel-container">
+            <div class="carousel">
+                <img src="https://images.unsplash.com/photo-1518199266791-5375a83190b7?w=800" alt="Photo 1" class="carousel-image active">
+                <img src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?w=800" alt="Photo 2" class="carousel-image">
+                <img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=800" alt="Photo 3" class="carousel-image">
+                <img src="https://images.unsplash.com/photo-1516589091380-5d8e87df6999?w=800" alt="Photo 4" class="carousel-image">
+            </div>
+            <button class="carousel-btn prev">❮</button>
+            <button class="carousel-btn next">❯</button>
+        </div>
+
+        <div class="message-container">
+            <p class="message">
+                Ces derniers moments passés ensemble ont été incroyables. 
+                J'ai réalisé à quel point tu comptes pour moi et combien j'apprécie 
+                chaque instant à tes côtés. Je voudrais que ce week-end soit spécial 
+                pour nous deux...
+            </p>
+        </div>
+
+        <div class="question-container">
+            <h2 class="question">
+                Veux-tu essayer de construire quelque chose avec moi et passer ce 
+                week-end de Saint-Valentin ensemble pour marquer ce tournant dans notre relation ?
+            </h2>
+            <div class="buttons-container">
+                <button id="yesBtn" class="answer-btn yes-btn">Oui ❤️</button>
+                <button id="noBtn" class="answer-btn no-btn">Non</button>
+            </div>
+        </div>
     </div>
 
-    <h3 class="question">
-        Veux-tu essayer de construire quelque chose avec moi et passer ce week-end
-        de Saint-Valentin ensemble pour marquer ce tournant dans notre relation ?
-    </h3>
-
-    <div class="button-zone">
-        <button id="ouiBtn">Oui</button>
-        <button id="nonBtn">Non</button>
+    <!-- Page 3: Message final -->
+    <div id="page3" class="page">
+        <div class="final-container">
+            <h1 class="final-title">Je t'aime Chipy Sylvain ❤️</h1>
+            <p class="final-message">Merci de me faire confiance</p>
+            <p class="signature">Ton Boy 💕</p>
+        </div>
     </div>
 
-</div>
-
-<!-- SCREEN 3 -->
-<div id="screen3" class="screen">
-    <div class="big">Je t’aime Chipy Sylvain</div>
-    <p>Merci de me faire confiance</p>
-    <p><strong>Ton Boy</strong></p>
-</div>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
